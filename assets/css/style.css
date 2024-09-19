@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+
+    background: url('../img/codigo.svg'), linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* Hace que la imagen cubra todo el área del elemento */
+    background-position: right;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"] {
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.boton_agregar {
+    display: flex;           /* Utiliza flexbox para alinear elementos */
+    align-items: center;     /* Centra verticalmente los elementos dentro del botón */
+    gap: 10px;               /* Espacio entre la imagen y el texto */
+    padding: 10px 20px;      /* Ajusta el espacio interno del botón */
+    background-color: #4005ad; /* Color de fondo del botón */
+    color: white;            /* Color del texto */
+    font-size: 1.2rem;
+    border: none;            /* Sin borde */
+    border-radius: 5px;      /* Bordes redondeados */
+    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s;
+}
+.boton_agregar img {
+    vertical-align: middle;  
+}
+
+.btn_eliminar {
+    display: flex;           /* Utiliza flexbox para alinear elementos */
+    align-items: center;     /* Centra verticalmente los elementos dentro del botón */
+    gap: 5px;               /* Espacio entre la imagen y el texto */
+    padding: 5px 15px;      /* Ajusta el espacio interno del botón */
+    background-color: #9b0404; /* Color de fondo del botón */
+    color: white;            /* Color del texto */
+    font-size: 0.8rem;
+    border: none;            /* Sin borde */
+    border-radius: 5px;      /* Bordes redondeados */
+    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s;
+}
+.btn_eliminar img {
+    vertical-align: middle;  
+}
+.btn_actualizar {
+    display: flex;           /* Utiliza flexbox para alinear elementos */
+    align-items: center;     /* Centra verticalmente los elementos dentro del botón */
+    gap: 5px;               /* Espacio entre la imagen y el texto */
+    padding: 5px 15px;      /* Ajusta el espacio interno del botón */
+    background-color: #1a4d64; /* Color de fondo del botón */
+    color: white;            /* Color del texto */
+    font-size: 0.8rem;
+    border: none;            /* Sin borde */
+    border-radius: 5px;      /* Bordes redondeados */
+    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s;
+}
+.btn_actualizar img {
+    vertical-align: middle;  
+}
+button:hover {
+    background-color: #0f0052;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: fit-content;
+    overflow-y: auto;
+    width: 100%;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #041832;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+
+    top: 110px;
+    left: 120px;
+    width: 1200px;
+    min-height: 80vh;
+    margin: 0px auto;
+    padding: 20px;
+    background: linear-gradient(0deg, rgba(20, 68, 128, 0.3), rgba(20, 68, 128, 0.3)),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+
+    border-radius: 24px;
+    color: white;
+    box-shadow: 4px 4px 20px 0px #01080E26;
+    border: 1px solid #1875E8
+}
+
+.container {
+    display: flex;
+    gap: 45px;
+    width: 860px;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+    opacity: 0px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 20px;
+}
+
+.total {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+/* Estilos de la cabecera */
+.cabecera {
+    width: 100%;
+    height: 100px; /* Puedes ajustar la altura según tu preferencia */
+    background-color: #000c1bc2; /* Color de fondo de la cabecera */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Hace que la cabecera permanezca en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos del nombre */
+.nombre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: 800; /* Negrita */
+    color: #fff; /* Color del texto */
+    margin: 0; /* Quita los márgenes predeterminados */
+}

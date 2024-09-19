@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos Mensuales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecera">
+        <h1 class="nombre">LUIS DIEGO CALLISAYA MACHACA</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="img-container">
+                <img src="./assets/img/titulo.png" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
+                <input type="text" id="descripcionGasto" placeholder="Descripcion del gasto">
+                <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
+                <button class="boton_agregar" id="botonFormulario" onclick="clickBoton();"> 
+                    <img src="assets/img/icons/save.png" width="50px" height="50px"> Agregar Gasto
+                </button>
+                
+            </div>
+            <div class="total">
+                Total Mensual: US$ <span id="totalGastos">0.00</span>
+            </div>
+            <ul id="listaDeGastos"></ul>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <!--Recurso SweetAlert2-->
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
